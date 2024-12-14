@@ -170,8 +170,8 @@ const char index_html[] PROGMEM = R"rawliteral(
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       margin: 0;
       padding: 5px;
-      color: #ff3ec8;
-      background-color: #202124;
+      color: #b477ff; /*****************буквы**/
+      background-color: #000000;
     }
 
     .container {
@@ -183,7 +183,7 @@ const char index_html[] PROGMEM = R"rawliteral(
     h3 {
       margin: 0;
       padding: 10px 0;
-      border-bottom: 1px solid #7b007b;
+      border-bottom: 1px solid #b477ff; /*******************/
     }
  
     table {
@@ -202,7 +202,7 @@ const char index_html[] PROGMEM = R"rawliteral(
     }
  
     a {
-      color: #ffbee0;
+      color: #bd00f7; /*******************/
       text-decoration: none;
     }
  
@@ -212,11 +212,11 @@ const char index_html[] PROGMEM = R"rawliteral(
  
     button {
       background-color: #303134;
-      color: #ff3ec8;
+      color: #b477ff; /*******************/
       border: 2px solid;
       padding: 4px 8px;
       border-radius: 4px;
-      border-color: #ef007b;
+      border-color: #ca7bff; /*******************/
       cursor: pointer;
       margin: 5px;
     }
@@ -261,13 +261,23 @@ const char index_html[] PROGMEM = R"rawliteral(
     right: 10px; /* Ajuste conforme necessário */
     font-size: 16px;
   }
+
+  .drop-area {
+    border: 2px dashed #b477ff; /*******************/
+    padding: 100px;
+    margin-top: 50px;
+    display: none;
+  }
+
+  .highlight {
+    background-color: #303134;
+    color: #ad007c65;
+  }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="float-element"><a onclick="logoutButton()" href='javascript:void(0);'>[X]</a></div>
     <h1 align="center">BRUCE Firmware</h1>
-    <p>Firmware for offensive pranks and pentest studies and analysis. For educational purposes only. Don't use in environments where you are not allowed. All responsibilities for irresponsible usage of this firmware rest on your fin, sharky. Sincerely, Bruce.</p>
     <p>Firmware version: %FIRMWARE%</p>
     <p>Free Storage: <span id="freeSD">%FREESD%</span> | Used: <span id="usedSD">%USEDSD%</span> | Total: <span id="totalSD">%TOTALSD%</span></p>
     <p>
