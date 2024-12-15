@@ -8,7 +8,7 @@
 void Custom::optionsMenu() {
     options = {
         {"Weather",      [=]() {}},
-        {"Bitcoin Price", [=]() { showBitcoinPrice(); }},  // Новый пункт меню для отображения курса биткоина
+        {"Bitcoin Price", [=]() {}},  // Новый пункт меню для отображения курса биткоина
         {"Main Menu",    [=]() {}},
     };
 
@@ -46,6 +46,8 @@ void Custom::drawIcon(float scale) {
 }
 
 /*
+{"Bitcoin Price", [=]() {showBitcoinPrice();}},
+
 float getBitcoinPrice() {
     String url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd";
     HTTPClient http;
