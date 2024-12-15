@@ -25,6 +25,7 @@ MainMenu::MainMenu() {
         &clockMenu,
         &connectMenu,
         &configMenu,
+        &custom,
     };
 
     _totalItems = _menuItems.size();
