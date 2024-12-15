@@ -9,8 +9,8 @@ public:
 
     void optionsMenu(void);
     void drawIcon(float scale);
-    void showBitcoinPrice();  // Объявление метода для отображения курса биткоина
-    void clearIconArea();     // Объявление метода для очистки области
+    //void showBitcoinPrice();  // Объявление метода для отображения курса биткоина
+    //void clearIconArea();     // Объявление метода для очистки области
 };
 
 #endif
